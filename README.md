@@ -44,27 +44,47 @@ A Transit Gateway in each region acts as a hub to enable scalable communication 
 
 
                                                             Connectivity Model
-- Region: us-west-1
+Region: us-west-1
+
 -----------------------------
-- NASENI-VPC (10.1.0.0/16)
-- |
-- |
-- TGW-A
-- |
-- |
-- ELDI-VPC (10.10.0.0/16)
-- |
-- |
+
+NASENI-VPC (10.1.0.0/16)
+
+|
+
+|
+
+TGW-A
+
+|
+
+|
+
+ELDI-VPC (10.10.0.0/16)
+
+|
+
+|
+
 ==== TGW Peering Attachment ====
-- |
-- |
-- TGW-B
-- |
-- |
-- SEDDI-VPC (10.16.0.0/16)
+
+|
+
+|
+
+TGW-B
+
+|
+
+|
+
+SEDDI-VPC (10.16.0.0/16)
+
 -----------------------------
-- Region: us-east-2
-- Traffic between the regions flows through the Transit Gateway Peering connection.
+
+Region: us-east-2
+
+Traffic between the regions flows through the Transit Gateway Peering connection.
 
 
 
