@@ -64,14 +64,7 @@ SEDDI-VPC (10.16.0.0/16)
 -----------------------------
 Region: us-east-2
 Traffic between the regions flows through the Transit Gateway Peering connection.
-AWS Services Used
-This project leverages several core AWS networking services:
-•	Amazon VPC – Virtual private networks
-•	AWS Transit Gateway – Centralized network hub
-•	Amazon EC2 – Instances used to test connectivity
-•	AWS Identity and Access Management – Secure access management
-•	Network ACLs and Security Groups – Network security controls
-•	Route Tables – Routing configuration for VPC communication
+
 
 
 Network Design
@@ -197,6 +190,16 @@ This confirms inter-VPC and cross-region connectivity.
 ### 🔹 Route Table Configuration
 ![Routes](screenshots/route-table.png)
 
+---
+
+### 🔹 AWS Services Used
+This project leverages several core AWS networking services:
+•	Amazon VPC – Virtual private networks
+•	AWS Transit Gateway – Centralized network hub
+•	Amazon EC2 – Instances used to test connectivity
+•	AWS Identity and Access Management – Secure access management
+•	Network ACLs and Security Groups – Network security controls
+•	Route Tables – Routing configuration for VPC communication
 ---
 
 ## 🔐 Security Considerations
