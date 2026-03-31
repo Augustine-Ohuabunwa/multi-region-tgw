@@ -23,9 +23,9 @@ This project demonstrates how to use **AWS Transit Gateway Peering** to create a
 ![Architecture Diagram](architecture-diagram.png)
 
 The architecture connects VPCs deployed in two AWS regions:
-•	Region 1: us-west-1 (N. California)
-•	Region 2: us-east-2 (Ohio)
-A Transit Gateway in each region acts as a hub to enable scalable communication between VPC networks.
+- Region 1: us-west-1 (N. California)
+- Region 2: us-east-2 (Ohio)
+- A Transit Gateway in each region acts as a hub to enable scalable communication between VPC networks.
 
 ---
 
@@ -43,27 +43,27 @@ A Transit Gateway in each region acts as a hub to enable scalable communication 
 
 
                                                             Connectivity Model
-Region: us-west-1
+- Region: us-west-1
 -----------------------------
-NASENI-VPC (10.1.0.0/16)
-|
-|
-TGW-A
-|
-|
-ELDI-VPC (10.10.0.0/16)
-|
-|
+- NASENI-VPC (10.1.0.0/16)
+- |
+- |
+- TGW-A
+- |
+- |
+- ELDI-VPC (10.10.0.0/16)
+- |
+- |
 ==== TGW Peering Attachment ====
-|
-|
-TGW-B
-|
-|
-SEDDI-VPC (10.16.0.0/16)
+- |
+- |
+- TGW-B
+- |
+- |
+- SEDDI-VPC (10.16.0.0/16)
 -----------------------------
-Region: us-east-2
-Traffic between the regions flows through the Transit Gateway Peering connection.
+- Region: us-east-2
+- Traffic between the regions flows through the Transit Gateway Peering connection.
 
 
 
@@ -76,10 +76,10 @@ Network Design
 
  
 Each VPC contains:
-•	1 Availability Zone
-•	1 Public Subnet
-•	Network ACL
-•	Security Group
+- 1 Availability Zone
+- 1 Public Subnet
+- Network ACL
+- Security Group
 
 ---
 
@@ -174,9 +174,9 @@ Ping tests confirmed successful connectivity using private IP addresses
 
  
 Example output:
-PING 10.10.11.95
-64 bytes from 10.10.11.95: icmp_seq=1 ttl=63 time=1.3 ms
-This confirms inter-VPC and cross-region connectivity.
+- PING 10.10.11.95
+- 64 bytes from 10.10.11.95: icmp_seq=1 ttl=63 time=1.3 ms
+- This confirms inter-VPC and cross-region connectivity.
 ---
 
 ## 📸 Screenshots
@@ -194,12 +194,12 @@ This confirms inter-VPC and cross-region connectivity.
 
 ### 🔹 AWS Services Used
 This project leverages several core AWS networking services:
-•	Amazon VPC – Virtual private networks
-•	AWS Transit Gateway – Centralized network hub
-•	Amazon EC2 – Instances used to test connectivity
-•	AWS Identity and Access Management – Secure access management
-•	Network ACLs and Security Groups – Network security controls
-•	Route Tables – Routing configuration for VPC communication
+- Amazon VPC – Virtual private networks
+- AWS Transit Gateway – Centralized network hub
+- Amazon EC2 – Instances used to test connectivity
+- AWS Identity and Access Management – Secure access management
+- Network ACLs and Security Groups – Network security controls
+- Route Tables – Routing configuration for VPC communication
 ---
 
 ## 🔐 Security Considerations
