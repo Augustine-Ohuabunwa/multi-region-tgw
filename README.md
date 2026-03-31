@@ -121,13 +121,13 @@ Three VPCs were created using Amazon VPC:
  
 Each VPC includes:
 
-Public subnet
+- Public subnet
 
-Route table
+- Route table
 
-Network ACL
+- Network ACL
 
-Security Group
+- Security Group
 
 2 Configure Network Security
 
