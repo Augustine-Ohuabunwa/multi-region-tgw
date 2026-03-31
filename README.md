@@ -233,7 +233,7 @@ This confirms inter-VPC and cross-region connectivity.
   <img src="screenshots/Transit-gateway-attachment.png" width="700"/>
 </p>
 
-### 🔹 Route Table Configuration
+### 🔹 Updating Route Table 
 <p align="center">
   <img src="screenshots/Route-Table-Update2.png" width="700"/>
 </p>
