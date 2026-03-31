@@ -98,13 +98,13 @@ Network Design
  
 Each VPC contains:
 
-1 Availability Zone
+- 1 Availability Zone
 
-1 Public Subnet
+- 1 Public Subnet
 
-Network ACL
+- Network ACL
 
-Security Group
+- Security Group
 
 ---
 
@@ -233,15 +233,15 @@ This confirms inter-VPC and cross-region connectivity.
 ### 🔹 AWS Services Used
 This project leverages several core AWS networking services:
 
-Amazon VPC – Virtual private networks
+- Amazon VPC – Virtual private networks
 
-AWS Transit Gateway – Centralized network hub
+- AWS Transit Gateway – Centralized network hub
 
-Amazon EC2 – Instances used to test connectivity
+- Amazon EC2 – Instances used to test connectivity
 
-AWS Identity and Access Management – Secure access management
+- AWS Identity and Access Management – Secure access management
 
-Network ACLs and Security Groups – Network security controls
+- Network ACLs and Security Groups – Network security controls
 
 ---
 
