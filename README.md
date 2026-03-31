@@ -20,7 +20,6 @@ This project demonstrates how to use **AWS Transit Gateway Peering** to create a
 
 ## 🏗️ Architecture Overview
 
-![Architecture Diagram]
 <p align="center">
   <img src="architecture-diagram.png\architecture-diagram.png" width="700"/>
 </p>
@@ -223,10 +222,16 @@ This confirms inter-VPC and cross-region connectivity.
 ## 📸 Screenshots
 
 ### 🔹 Transit Gateway Setup
-![TGW](screenshots/tgw-creation.png)
+
+<p align="center">
+  <img src="screenshots/tgw-creation.png" width="700"/>
+</p>
 
 ### 🔹 VPC Attachment
-![Attachment](screenshots/vpc-attachment.png)
+
+<p align="center">
+  <img src="screenshots/Transit-gateway-attachment.png" width="700"/>
+</p>
 
 ### 🔹 Route Table Configuration
 ![Routes](screenshots/route-table.png)
