@@ -97,10 +97,14 @@ Network Design
 
  
 Each VPC contains:
-- 1 Availability Zone
-- 1 Public Subnet
-- Network ACL
-- Security Group
+
+1 Availability Zone
+
+1 Public Subnet
+
+Network ACL
+
+Security Group
 
 ---
 
@@ -116,19 +120,27 @@ Three VPCs were created using Amazon VPC:
 
  
 Each VPC includes:
-•	Public subnet
-•	Route table
-•	Network ACL
-•	Security Group
+
+Public subnet
+
+Route table
+
+Network ACL
+
+Security Group
 
 2 Configure Network Security
+
 Network ACL Rules
+
 Inbound rules allowed:
-•	HTTP
-•	SSH
-•	ICMP
-•	TCP
+- HTTP
+- SSH
+- ICMP
+- TCP
+  
 Outbound rules mirror the inbound configuration to allow return traffic.
+
 Security Group Rules
 | Protocol | Port | Source   |
 | -------- | ---- | -------- |
@@ -144,7 +156,6 @@ Two Transit Gateways were deployed:
 | TGW-A           | us-west-1 |
 | TGW-B           | us-east-2 |
 
- 
 
 4 Create Transit Gateway Attachments
 Transit Gateway attachments were created for each VPC.
@@ -156,13 +167,16 @@ Transit Gateway attachments were created for each VPC.
 
  
 5 Establish Transit Gateway Peering
+
 A Transit Gateway Peering Attachment was created between the two regions.
 TGW-A (us-west-1)
 |
 | Peering Connection
 |
 TGW-B (us-east-2)
-	The peering attachment was then accepted in the destination region.
+
+The peering attachment was then accepted in the destination region.
+
 6 Configure Route Tables
 Route tables were updated in each VPC to enable traffic routing across regions.
 Example Route
@@ -171,8 +185,8 @@ Example Route
 | 10.10.0.0/16 | Transit Gateway |
 | 10.16.0.0/16 | Transit Gateway |
 
+ Transit Gateway route tables were also configured with static routes.
  
-Transit Gateway route tables were also configured with static routes.
 7 Connectivity Testing
 Instances created:
 | Instance   | VPC    |
@@ -195,9 +209,12 @@ Ping tests confirmed successful connectivity using private IP addresses
 
  
 Example output:
-- PING 10.10.11.95
-- 64 bytes from 10.10.11.95: icmp_seq=1 ttl=63 time=1.3 ms
-- This confirms inter-VPC and cross-region connectivity.
+
+PING 10.10.11.95
+
+64 bytes from 10.10.11.95: icmp_seq=1 ttl=63 time=1.3 ms
+
+This confirms inter-VPC and cross-region connectivity.
 ---
 
 ## 📸 Screenshots
@@ -215,12 +232,17 @@ Example output:
 
 ### 🔹 AWS Services Used
 This project leverages several core AWS networking services:
-- Amazon VPC – Virtual private networks
-- AWS Transit Gateway – Centralized network hub
-- Amazon EC2 – Instances used to test connectivity
-- AWS Identity and Access Management – Secure access management
-- Network ACLs and Security Groups – Network security controls
-- Route Tables – Routing configuration for VPC communication
+
+Amazon VPC – Virtual private networks
+
+AWS Transit Gateway – Centralized network hub
+
+Amazon EC2 – Instances used to test connectivity
+
+AWS Identity and Access Management – Secure access management
+
+Network ACLs and Security Groups – Network security controls
+
 ---
 
 ## 🔐 Security Considerations
@@ -233,9 +255,11 @@ This project leverages several core AWS networking services:
 
 ## 📈 Key Learnings
 
-- Transit Gateway simplifies complex network topologies  
-- Route table design is critical for connectivity  
-- Multi-region architectures require careful planning  
+Transit Gateway simplifies complex network topologies  
+
+Route table design is critical for connectivity  
+
+Multi-region architectures require careful planning  
 
 ---
 
@@ -251,9 +275,11 @@ This architecture is ideal for:
 
 ## 🚀 Future Enhancements
 
-- Infrastructure as Code (Terraform)  
-- Monitoring with CloudWatch  
-- Failover and high availability improvements  
+Infrastructure as Code (Terraform)  
+
+Monitoring with CloudWatch  
+
+Failover and high availability improvements  
 
 ---
 
