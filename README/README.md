@@ -178,4 +178,10 @@ Cloud Networking Project by:
 [Augustine Ebere Ohuabunwa]
 Solution Architect | DBA | AWS Certified | Cost Optimization, Automation & Security | Enterprise Systems
 
+## Project Screenshots
 
+![Transit Gateway Creation](screenshots/Transit-gateway-creation.png)
+
+![VPC Attachment](screenshots/Transit-gateway-attachment.png)
+
+![Route Table](screenshots/Route-Table-Update.png)
