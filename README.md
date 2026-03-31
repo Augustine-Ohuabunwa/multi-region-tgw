@@ -20,7 +20,10 @@ This project demonstrates how to use **AWS Transit Gateway Peering** to create a
 
 ## 🏗️ Architecture Overview
 
-![Architecture Diagram](architecture-diagram.png)
+![Architecture Diagram]
+<p align="center">
+  <img src="architecture-diagram.png" width="700"/>
+</p>
 
 The architecture connects VPCs deployed in two AWS regions:
 - Region 1: us-west-1 (N. California)
