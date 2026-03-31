@@ -22,7 +22,7 @@ This project demonstrates how to use **AWS Transit Gateway Peering** to create a
 
 ![Architecture Diagram]
 <p align="center">
-  <img src="architecture-diagram.png" width="700"/>
+  <img src="architecture-diagram.png\architecture-diagram.png" width="700"/>
 </p>
 
 The architecture connects VPCs deployed in two AWS regions:
