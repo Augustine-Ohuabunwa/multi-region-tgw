@@ -224,7 +224,7 @@ This confirms inter-VPC and cross-region connectivity.
 ### 🔹 Transit Gateway Setup
 
 <p align="center">
-  <img src="screenshots/tgw-creation.png" width="700"/>
+  <img src="screenshots/Transit-gateway-creation .png" width="700"/>
 </p>
 
 ### 🔹 VPC Attachment
@@ -234,7 +234,19 @@ This confirms inter-VPC and cross-region connectivity.
 </p>
 
 ### 🔹 Route Table Configuration
-![Routes](screenshots/route-table.png)
+<p align="center">
+  <img src="screenshots/Route-Table-Update2.png" width="700"/>
+</p>
+
+### 🔹 Creation of Static Route
+<p align="center">
+  <img src="screenshots/Static-Route.png" width="700"/>
+</p>
+
+### 🔹 Connectivity Testing
+<p align="center">
+  <img src="screenshots/Connectivity-Testing.png" width="700"/>
+</p>
 
 ---
 
